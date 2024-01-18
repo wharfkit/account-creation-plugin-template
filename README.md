@@ -1,5 +1,3 @@
-# WARNING: This is a work in progress and not ready for use.
-
 # @wharfkit/account-creation-plugin-template
 
 A template to create a `account-creationPlugin` for use within the `@wharfkit/session` library.
@@ -7,9 +5,20 @@ A template to create a `account-creationPlugin` for use within the `@wharfkit/se
 ## Usage
 
 -   [Use this as a template.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
--   Write your account-creation plugin's logic.
+-   Write your account-creation plugin's logic. For more information on how to do this, see the [Wharf Account Creation Plugin Documentation](https://wharfkit.com/docs/session-kit/plugin-account-creation)
 -   Publish it on Github or npmjs.com
--   Include it in your project and use it.
+-   Include it in your Wharf project and use it:
+
+```ts
+    import { SessionKit } from "@wharfkit/session";
+    import { YourAccountCreationPlugin } from "your-account-creation-plugin";
+
+    const sessionKit = new SessionKit(
+        {
+            accountCreationPlugins: [new YourAccountCreationPlugin()],
+        }
+    );
+```
 
 ## Developing
 
