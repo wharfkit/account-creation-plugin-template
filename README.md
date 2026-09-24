@@ -1,5 +1,3 @@
-# WARNING: This is a work in progress and not ready for use.
-
 # @wharfkit/account-creation-plugin-template
 
 A template to create a `account-creationPlugin` for use within the `@wharfkit/session` library.
@@ -13,9 +11,9 @@ A template to create a `account-creationPlugin` for use within the `@wharfkit/se
 
 ## Developing
 
-You need [Make](https://www.gnu.org/software/make/), [node.js](https://nodejs.org/en/) and [yarn](https://classic.yarnpkg.com/en/docs/install) installed.
+You need [Make](https://www.gnu.org/software/make/), [node.js](https://nodejs.org/en/) 20.19 or newer, and [yarn](https://classic.yarnpkg.com/en/docs/install) installed.
 
-Clone the repository and run `make` to checkout all dependencies and build the project. See the [Makefile](./Makefile) for other useful targets. Before submitting a pull request make sure to run `make lint`.
+Clone the repository and run `make` to install dependencies and build the project. `make test` runs the test suite and `make check` runs the linter; both are worth running before you open a pull request. See the [Makefile](./Makefile) for the other targets.
 
 ---
 
